@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doggos</title>
+    <style>
+        #left {
+         text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>Fetch a Dog!</h1>
+
+<div>
+
+    <form method="GET">
+        <img src="{{dogUrl}}" width="auto" height="400px">
+
+    </form>
+
+</div>
+
+<style>
+  input[type=submit] {
+  background-color: white;
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #008CBA;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,255,245,1) 0%, rgba(203,158,227,1) 100%);
+}
+
+</style>
+<div class="center">
+    <p>Click the button to fetch a new dog!</p>
+    <form method="post" action="/">
+        <input type="submit" value="Fetch New Dog" name="Fetch New Dog">
+    </form>
+
+</div>
+
+</body>
+</html>
